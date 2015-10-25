@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: georgia, arial, sans-serif;
+    font-size:15px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************** GENERAL ********************/
+
+body * {
+	box-sizing: border-box;
+}
+
+.wrapper{
+  width:1100px;
+    display: block;
+    margin:0 auto;  
+}
+
+a, h2{
+  color:#34AC98;
+    font-style: italic;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+a:hover{
+    color:#EC6635;
+}
+
+h2{
+    text-align: center;
+    margin: 5px 0;
+}
+/*************** HEADER ********************/
+
+h1 {
+    display: none;
+}
+
+header{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    align-items: stretch;
+}
+
+header nav{
+    flex-grow: 1;
+}
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+        header nav li{
+            padding-left: 55px;
+            padding-top: 13px;
+            flex-grow: 1;
+        }
+
+            header nav li:first-of-type {
+                padding-left: 0;
+                padding-top: 0;
+                flex-grow:3;
+            }
+
+    header nav li.tastemakers{
+        height: 38px;
+        background: url(theme/tastemakers.png) left center no-repeat;
+    }
+    header nav li.blog{
+        height: 38px;
+        background: url(theme/blog.png) left center no-repeat;
+    }
+    header nav li.a-list{
+        height: 38px;
+        background: url(theme/a-list.png) left center no-repeat;
+    }
+    header nav li.contribute{
+        height: 38px;
+        background: url(theme/contribute.png) left center no-repeat;
+    }
+    header nav li.about{
+        height: 38px;
+        background: url(theme/about.png) left center no-repeat;
+    }
+
+    header figure{
+        position: relative;
+        overflow: hidden;
+    }
+
+    header figure:hover figcaption{
+        bottom:10px;
+    }
+
+    header figcaption{
+        background:rgba(0,0,0, 0.5);
+        padding:5px;
+        color:#FFF;
+        font-style:italic;
+        font-weight: bold;
+        position: absolute;
+        right:0;
+        bottom:-25px;
+        transition: all 1s;
+    }
+
+/*************** SECTION ********************/
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+    article{
+        width:22%;
+    }
+
+        article img{
+            border:solid 1px #CCC;
+            border-radius:4px;
+            padding:5px;
+        }
+
+        article p{
+            line-height: 18px;
+        }
+
+        article .more{
+            float: right;
+            display: inline-block;
+            margin-top:5px;
+        }
+
+/*************** FOOTER ********************/
+
+footer{
+    display: flex;
+    border-top:solid 1px #ccc;
+    clear:both;
+    margin-top:30px;
+    padding-top:30px;
+}
+
+    footer nav li{
+        display:inline-block;
+        vertical-align: top;
+        margin-bottom: 5px;
+    }
+
+        footer nav li:after{
+            content:'|';
+        }
+
+            footer nav li:last-of-type:after{
+                content:'';
+            }
+
+    footer .reseaux{
+        margin-left: auto;
+    }
+
+    .google, .twitter, .fb{
+        background:url(theme/reseaux.png) left top no-repeat;
+        width:50px;
+        height:50px;
+        display: inline-block;
+    }
+
+    .twitter{
+        background-position: -50px top;
+    }
+
+    .fb{
+        background-position: -100px top;
+    }
+
+
+    .google:hover{
+        background-position: left -50px;
+    }
+    .twitter:hover{
+        background-position: -50px -50px;
+    }
+
+    .fb:hover{
+        background-position: -100px -50px;
+    }

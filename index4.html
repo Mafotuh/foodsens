@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teste des identificaiton </title>
+	<link href="css/styles3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+	<p>"Salut la Planet"<span>"vous allez passez en rouge"</span></p>
+
+	<q>Salut la planet !</q> Dite, <q>sont mieux !</q>
+
+	<ul>
+		<li>Acheter du lait</li>
+		<li>Promener le Chien</li>
+		<li>Faire de l'exercice</li>
+		<li>Coder</li>
+		<li>jouer</li>
+		<li>Relaxer</li>
+	</ul>
+	<script>
+
+	// var text = document.querySelector('p');
+
+	// text.addEventlistener('click', functionName, false);
+
+	// var functionName = function(Action){
+	// 	if (action.target.tagName === 'SPAN') {
+	// 		action.target.classText.toggle('nextClass');
+	// 	}
+	// }
+
+
+	var list = document.querySelector('ul');
+
+	var events = function (ev){
+		if (ev.target.tagName === 'LI') {
+			ev.target.classList.toggle('done');
+		}
+	}
+
+	list.addEventListener('click', events, false);
+
+	</script>
+
+
+<div class="example">
+<span id="floatme">« Flottant avant » devrait être généré sur la gauche du viewport
+et ne pas autoriser le débordement de cette ligne sur une nouvelle. De même « Flottant
+après » apparaît sur la droite du viewport et ne permet pas de débordement de cette ligne.</span>
+</div>
+</body>
+</html>

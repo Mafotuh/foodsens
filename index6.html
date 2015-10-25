@@ -1,0 +1,44 @@
+Maftouh
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array.prototype.map</title>
+</head>
+<body>
+
+<h1>Array.prototype.map</h1>
+
+<p>La méthode map() crée un nouveau tableau composé des images des éléments d'un tableau par une fonction donnée en argument. (<a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/map" target="_blank">Voir la documentation de <b>Array.prototype.map()</b> sur le MDN</a>)
+</p>
+
+<p><i>Ouvrir la console pour voir le résultat...</i></p>
+
+<script>
+  // Un tableau des prix 
+  var prix = [ "19.4899", "98.9098", "39.0976", "73.5609", "82.9876" ];
+
+  var element = prix.map()
+
+  var nbrArrondi = function arrondir(prix){
+  	prix.math.round()
+  }
+
+
+  var noms = [ "PerEZ", "André", "simon", "Denis", "de Oliveira" ];
+
+  // On stocke une fonction (dont le but est de mettre en majuscule) dans une variable
+  var mettreEnMajuscule = function(texte) {
+    return texte.toUpperCase();
+  }
+
+  // On applique sur chacun des éléments de noms la fonction qui renvoie la valeur en majuscule
+  // (On dit qu'on "mappe" une fonction sur chaque item du tableau 'noms')
+  var noms_formates = noms.map(mettreEnMajuscule);
+
+  console.log(noms_formates); // Affichera : ["PEREZ", "ANDRÉ", "SIMON", "DENIS", "DE OLIVEIRA"]
+</script>
+
+</body>
+</html>

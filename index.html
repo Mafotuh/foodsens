@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Teste des identificaiton </title>
+</head>
+<body>
+
+<p>Page with the script is runnung </p>
+
+<script type="text/javascript">
+
+call_me();
+  var call_me = function(){
+    prompt("Comme on !")
+  }
+
+// ==================JOUR 1====================
+
+ var login = prompt("Entrer votre login ?");
+ var password = prompt("Entrer votre mot de passe ?");
+
+ //"Lizard"en liging et"Spock"en password 
+
+ if (login ==="Lizard"&& password ==="Spock") {
+  alert("Succès de l'identificaiton !");
+ }else{
+  alert("Echec de l'identification !");
+ }
+
+
+// MINI Calculatrice 
+// Methode 1 :
+ // var nb1 = prompt("Saisir votre nonbre ici !");
+ // var opp = prompt("Saisir votre type d'opperateur !");
+ // var nb2 = prompt("Saisir votre 2eme nonbre ici !");
+
+ // if (opp =="+") {
+ //  var somme = Number(nb1)+Number(nb2);
+ //  alert(somme);
+ // }else if(opp =="-"){
+ //  var somme = Number(nb1)-Number(nb2);
+ //  alert(somme);
+ // }else if(opp =="*"){
+ //  var somme = Number(nb1)*Number(nb2);
+ //  alert(somme);
+ // }else if(opp =="/"){
+ //  var somme = Number(nb1)/Number(nb2);
+ //  alert(somme);
+ // }else if(opp =="%"){
+ //  var somme = Number(nb1)%Number(nb2);
+ //  alert(somme);
+ // }
+
+
+ // var nb1 = prompt("Saisir votre nonbre ici !");
+ // var opp = prompt("Saisir votre type d'opperateur !");
+ // var nb2 = prompt("Saisir votre 2eme nonbre ici !");
+
+ // var somme = Number(nb1).concat(nb2);
+
+ // alert(somme);
+
+
+
+
+// var exp = Math.round(Math.random()*10);
+// var compt = 0;
+// while(true){
+//  compt++;
+
+//  var nbr = prompt("Saisir votre nonbre entre 1 à 10!");
+//  if (nbr >10) {
+//   alert("You are OUT of rank ! saisir un numbre entre 1 à 10")
+//  }else{
+//   if (nbr == exp) {
+//    alert("vous avez la bonne reponse sur"+compt +"coup !");
+//     var replay = prompt("voulez-vous rejouer ? Y / N");
+//     if (replay =="y"|| replay =="Y") {
+//      var exp = Math.round(Math.random()*100);
+//     }else{
+//      prompt("Good bye !");
+//      break;
+//     }
+//    // break;
+//   }else if(nbr > exp){
+//    alert("C moins !");
+//   }else if(nbr < exp){
+//    alert("C plus !");
+//   }
+//  }
+
+// }
+
+//==========================JOUR 2=====================
+
+// function addition(a, b){
+//  var somme = a + b;
+//  return somme;
+// }
+
+
+  // var login = prompt("Entrer votre login ?");
+  // var password = prompt("Entrer votre mot de passe ?");
+
+  // // "Lizard" en liging et "Spock" en password 
+
+  // if (login === "Lizard" && password === "Spock") {
+  //  alert("Succès de l'identificaiton !");
+  // }else{
+  //  alert("Echec de l'identification !");
+  // }
+
+
+
+var message4 ="Sl jopmmyl kl Jlzhy (vb jvkl kl Jlzhy) lza bu jopmmyltlua why kljhshnl whytp slz wsbz zptwslz la slz wsbz jvuub, ps bapspzl sh zbizapabapvu k'bul slaayl why bul hbayl wsbzsvpu khuz s'hswohila";
+var message4 = message4.toLowercase();
+var message4 = message4.split('');
+
+for(i=0; i<message4.length; i++){
+	if(message4[i] =="a"){message4[i] ="0";}
+	if(message4[i] =="b"){message4[i] ="1";}
+	if(message4[i] =="c"){message4[i] ="2";}
+	if(message4[i] =="d"){message4[i] ="3";}
+	if(message4[i] =="e"){message4[i] ="4";}
+	if(message4[i] =="f"){message4[i] ="5";}
+	if(message4[i] =="g"){message4[i] ="6";}
+	if(message4[i] =="h"){message4[i] ="7";}
+	if(message4[i] =="i"){message4[i] ="8";}
+	if(message4[i] =="j"){message4[i] ="9";}
+	if(message4[i] =="k"){message4[i] ="10";}
+	if(message4[i] =="l"){message4[i] ="11";}
+	if(message4[i] =="m"){message4[i] ="12";}
+	if(message4[i] =="n"){message4[i] ="13";}
+	if(message4[i] =="o"){message4[i] ="14";}
+	if(message4[i] =="p"){message4[i] ="15";}
+	if(message4[i] =="q"){message4[i] ="16";}
+	if(message4[i] =="r"){message4[i] ="17";}
+	if(message4[i] =="s"){message4[i] ="18";}
+	if(message4[i] =="t"){message4[i] ="19";}
+	if(message4[i] =="u"){message4[i] ="20";}
+	if(message4[i] =="v"){message4[i] ="21";}
+	if(message4[i] =="w"){message4[i] ="22";}
+	if(message4[i] =="x"){message4[i] ="23";}
+	if(message4[i] =="y"){message4[i] ="24";}
+	if(message4[i] =="z"){message4[i] ="25";}
+}
+
+console.log(message4.join(""));
+
+
+// Message 1
+var message1 ="St_v_n P*$l \"St_v_\"J&bs w*s *n *m_r%c*n %nv_nt&r *nd _ntr_pr_n_$r. H_ w*s c&-f&$nd_r, ch*%rm*n, *nd ch%_f _x_c$t%v_ &ff%c_r &f *ppl_ %nc. J&bs w*s c&-f&$nd_r *nd pr_v%&$sly s_rv_d *s ch%_f _x_c$t%v_ &f P%x*r *n%m*t%&n St$d%&s; h_ b_c*m_ * m_mb_r &f th_ b&*rd &f d%r_ct&rs &f th_ W*lt D%sn_y C&mp*ny %n 2006, f&ll&w%ng th_ *cq$%s%t%&n &f P%x*r by D%sn_y.";
+var message1 = message1.split('');
+
+for(i=0; i<message1.length; i++){
+    
+    if(message1[i] =="_"){
+        message1[i] ="e";
+    }
+    if(message1[i] =="*"){
+        message1[i] ="a";
+    }
+    if(message1[i] =="%"){
+        message1[i] ="i";
+    }
+    if(message1[i] =="&"){
+        message1[i] ="o";
+    }
+    if(message1[i] =="$"){
+        message1[i] ="u";
+    }
+}
+// console.log(message1.join(""));
+
+//Message 2
+
+var message2 ="W-ll-#m H°>ry \"B-ll\"G#t°< III (b*r> Oct*b°r 28, 1955) -< #> Am°r-c#> bu<->°<< m#g>#t°,ph-l#>thr*p-<t, ->v°<t*r, c*mput°r pr*gr#mm°r, #>d ->v°>t*r. G#t°< -< th° f*rm°r ch-°f °x°cut-v° #>d ch#-rm#> *f M-cr*<*ft, th° w*rld'< l#rg°<t p°r<*>#l c*mput°r <*ftw#r° c*mp#>y, wh-ch h° c*-f*u>d°d w-th P#ul All°>.";
+var message2 = message2.split('');
+
+for(i=0; i<message2.length; i++){
+
+ switch (message2[i]) {
+  case '#':
+  message2[i] ="a";
+  break;
+
+  case '*':
+  message2[i] ="o";
+  break;
+
+  case '°':
+  message2[i] ="e";
+  break;
+
+  case '<':
+  message2[i] ="s";
+  break;
+
+  case '>':
+  message2[i] ="n";
+  break;
+
+  case '-':
+  message2[i] ="i";
+  break;
+ }
+}
+
+// console.log(message2.join(""));
+
+// Message 3
+
+var message3 ="S!r T!m07hy J0hn \"T!m\"B3rn3r5-L33, 4150 kn0wn 45 \"T!mBL\", !5 4n Eng1!5h c0mpu73r 5c!3n7!57, b357 kn0wn 45 7h3 !nv3n70r 0f 7h3 W0r1d W!d3 W3b. H3 m4d3 4 pr0p0541 f0r 4n !nf0rm47!0n m4n4g3m3n7 5y573m !n M4rch 89, 4nd h3 !mp13m3n73d 7h3 f!r57 5ucc355fu1 c0mmun!c47!0n b37w33n 4 Hyp3r73x7 Tr4n5f3r Pr070c01 (HTTP) c1!3n7 4nd 53rv3r v!4 7h3 In73rn37 50m37!m3 4r0und m!d N0v3mb3r 0f 7h47 54m3 y34r.";
+var message3 = message3.split('');
+
+i = 0;
+do{
+    i++;
+ switch (message3[i]) {
+  case '4': message3[i] ="a";
+  break;
+
+  case '3': message3[i] ="e";
+  break;
+
+  case '!': message3[i] ="i";
+  break;
+
+  case '0': message3[i] ="o";
+  break;
+
+  case '1': message3[i] ="l";
+  break;
+
+  case '5': message3[i] ="s";
+  break;
+
+  case '7': message3[i] ="t";
+  break;
+ }
+
+}while(i<message3.length);
+
+// console.log(message3.join(""));
+
+// Message 4
+
+var message4 ="Sl jopmmyl kl Jlzhy (vb jvkl kl Jlzhy) lza bu jopmmyltlua why kljhshnl whytp slz wsbz zptwslz la slz wsbz jvuub, ps bapspzl sh zbizapabapvu k'bul slaayl why bul hbayl wsbzsvpu khuz s'hswohila";
+var message4 = message4.split('');
+
+
+for(i=0; i<message4.length; i++){
+   
+
+}
+
+// console.log(message4.join(""));
+
+var text ="portez ce vieux bourbon au vieu juge qui fume";
+
+// Insertion du point"!"
+var text = text.concat("!"); 
+// var text = text.replace(/(.)$/, function(matches, p1) { return p1 +"!"});
+
+// remplacement du mot
+var nwtxt = /bourbon/gi;
+var text = text.replace(nwtxt,"whisky");
+
+// Mettre le texte en majuscule 
+text = text.toUpperCase();
+
+console.log(text);
+
+// Recherche l'index  Z
+var position = text.indexOf("Z");
+console.log("Z est a la position"+ position);
+
+// Afficher le tableau 
+var splited = text.split('');
+// var tableau = indexOf(splited);
+
+console.log(splited);
+
+ </script>
+</body>
+</html>
